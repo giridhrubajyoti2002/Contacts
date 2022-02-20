@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:background="@color/bgColor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/contactTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back"
+                android:padding="5dp"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnBack"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="Contact"
+            android:textSize="24sp"
+            android:textColor="@color/white"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/avatarIV"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_below="@+id/contactTB"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_avatar" />
+
+    <TextView
+        android:id="@+id/contactNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatarIV"
+        android:layout_marginHorizontal="20dp"
+        android:padding="5dp"
+        android:text="Contact name"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/contactNameTV"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/rounded_corner_2"
+        android:paddingHorizontal="15dp">
+
+        <ImageView
+            android:id="@+id/callIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_call_white" />
+
+        <TextView
+            android:id="@+id/numberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_toRightOf="@+id/callIV"
+            android:padding="5dp"
+            android:text="Add phone number"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnEditContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/edit"
+        android:text="Edit contact"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_edit_white"
+        app:iconTint="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "356104035138",
+    "project_id": "contacts-4ca19",
+    "storage_bucket": "contacts-4ca19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356104035138:android:a5f41f42d935e9102906db",
+        "android_client_info": {
+          "package_name": "com.dhrubajyoti.contacts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356104035138-chjprn93d4e9f1hc13amqkhad9j0bgr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_UAWgWKczGAHvxkrnhgtFovgAkdZEfwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356104035138-chjprn93d4e9f1hc13amqkhad9j0bgr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

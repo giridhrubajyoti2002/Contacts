@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:gravity="center"
+    tools:context=".SignUpActivity"
+    android:paddingBottom="60dp"
+    android:id="@+id/parentLayout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/contacts" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:hint="Contact Number"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:textColorHint="@color/grey"
+            android:textSize="16sp"
+            />
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:hint="Password"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:textColorHint="@color/grey"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/edtRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:hint="Re-Enter Password"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:textColorHint="@color/grey"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            >
+
+            <TextView
+                android:id="@+id/tvAlreadyHaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text=" Already have an account "
+                android:textColor="#0C7177"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                app:cornerRadius="4dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".CreateContact"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/contactTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_cancel_white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btnCancel"
+                android:padding="5dp"
+                android:text="Create contact"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/btnSaveContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/rounded_corner"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="4dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/avatarIV"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_below="@+id/contactTB"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_avatar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatarIV"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtNameRL">
+        <ImageView
+            android:id="@+id/avatar2IV"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_avatar_2" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_toRightOf="@+id/avatar2IV"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNameRL"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/callIV"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_phone" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_toRightOf="@id/callIV"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:inputType="textPhonetic"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
